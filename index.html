@@ -331,6 +331,23 @@ nav ul {
     order: 3;
 }
 
+.beforeemailtext {
+  margin-bottom: 0;
+}
+
+.email {
+  color: var(--primary-darker);
+  text-decoration:none;
+}
+.email:hover {
+  color: var(--accent-coral);
+}
+
+.footeremail {
+  color: var(--text-light);
+  text-decoration:none;
+}
+
 nav ul li a {
     color: var(--text-light);
     font-weight: 400;
@@ -1158,7 +1175,8 @@ footer a:hover {
             
             <div class="direct-contact">
                 <h3 data-fr="Préférez le Contact Direct ?" data-en="Prefer Direct Contact?">Préférez le Contact Direct ?</h3>
-                <p data-fr="Envoyez-nous un email directement : " data-en="Email us directly: ">Envoyez-nous un email directement : <a href="mailto:contact@pfepfasuccess.com">contact@pfepfasuccess.com</a></p>
+                <p class="beforeemailtext" data-fr="Envoyez-nous un email directement : " data-en="Email us directly: ">Envoyez-nous un email directement :</p>
+                <span><a class="email" href="mailto:pfapfesuccess@gmail.com">pfapfesuccess@gmail.com</a></span>
                 <p data-fr="Nous répondons généralement dans les 2 heures pendant les heures d'ouverture." data-en="We typically respond within 2 hours during business hours.">Nous répondons généralement dans les 2 heures pendant les heures d'ouverture.</p>
             </div>
         </section>
@@ -1175,7 +1193,7 @@ footer a:hover {
                 <p data-fr="Développement web rapide, abordable et professionnel." data-en="Fast, affordable, professional web development.">Développement web rapide, abordable et professionnel.</p>
             </div>
             <div class="footer-contact">
-                <p data-fr="Email : " data-en="Email: ">Email : <a href="mailto:contact@pfepfasuccess.com">contact@pfepfasuccess.com</a></p>
+                <a class="footeremail" href="mailto:pfapfesuccess@gmail.com">pfapfesuccess@gmail.com</a>
             </div>
         </div>
     </footer>
