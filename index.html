@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PFE_PFA_Success - Équipe de développement web professionnel offrant des applications web rapides et abordables, applications desktop et solutions mobiles.">
+    <meta name="keywords" content="développement web, applications web, applications mobiles, développement desktop, développement web abordable">
+    <title>PFE_PFA_Success - Développement Web Rapide et Abordable</title>
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PFE_PFA_Success">
+    <meta name="theme-color" content="#004B50">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pfepfasuccess.com/">
+    <meta property="og:title" content="PFE_PFA_Success - Développement Web Rapide et Abordable">
+    <meta property="og:description" content="Équipe de développement web professionnel offrant des applications web rapides et abordables, applications desktop et solutions mobiles.">
+    <meta property="og:image" content="https://pfepfasuccess.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pfepfasuccess.com/">
+    <meta property="twitter:title" content="PFE_PFA_Success - Développement Web Rapide et Abordable">
+    <meta property="twitter:description" content="Équipe de développement web professionnel offrant des applications web rapides et abordables, applications desktop et solutions mobiles.">
+    <meta property="twitter:image" content="https://pfepfasuccess.com/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PFE_PFA_Success",
+      "url": "https://pfepfasuccess.com",
+      "description": "Équipe de développement web professionnel spécialisée dans les applications web rapides et abordables, applications mobiles et solutions desktop.",
+      "serviceType": ["Développement Web", "Développement d'Applications Mobiles", "Développement d'Applications Desktop", "Solutions E-commerce"]
+    }
+    </script>
+    
+    <style>
+/* Meyer Reset v2.0 | http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Additional Modern Reset Extensions */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+/* Base Styles After Reset */
+
+:root {
+    /* Color Palette */
+    --primary-dark: #004B50;
+    --primary-darker: #00262D;
+    --primary-medium: #00606D;
+    --primary-muted: #2A3B46;
+    --accent-coral: #D34D50;
+    --text-light: #F5F5DC;
+    --text-dark: #2A3B46;
+    --white: #FFFFFF;
+    --light-bg: #F8F9FA;
+    
+    /* Fonts */
+    --font-heading: 'Fira Code', monospace;
+    --font-body: 'Oxygen', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Container - Industry Standard */
+    --container-max: 1200px;
+    --container-padding: 1rem;
+    --container-padding-lg: 2rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+/* Typography - Professional Standards */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-darker);
+    font-weight: 600;
+}
+
+/* Responsive Typography Scale */
+h1 { 
+    font-size: clamp(1.875rem, 4vw, 3.5rem); /* 30px - 56px */
+    font-weight: 700;
+}
+h2 { 
+    font-size: clamp(1.5rem, 3vw, 2.25rem); /* 24px - 36px */
+    font-weight: 600;
+}
+h3 { 
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* 20px - 24px */
+    font-weight: 600;
+}
+h4 { 
+    font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px - 20px */
+    font-weight: 500;
+}
+
+/* Body text - Professional sizing */
+body {
+    font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px - 18px */
+    line-height: 1.6;
+}
+
+/* Large text for hero and important sections */
+.hero p, .contact > p, .about > p {
+    font-size: clamp(1.125rem, 2vw, 1.25rem); /* 18px - 20px */
+}
+
+/* Small text */
+small, .tag {
+    font-size: clamp(0.875rem, 1.2vw, 0.9375rem); /* 14px - 15px */
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Container - Professional Layout */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    width: 100%;
+}
+
+/* Ensure all sections use proper container */
+section > * {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/* Override for sections that already have container classes */
+.hero, 
+.about .container,
+.services .container,
+.why-choose-us .container,
+.process .container,
+.portfolio .container,
+.contact .container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-darker));
+    color: var(--text-light);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+header a {
+  text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    position: relative;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: var(--spacing-xs);
+    order: 2;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.lang-btn.active {
+    background: var(--accent-coral);
+    border-color: var(--accent-coral);
+    color: var(--white);
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    gap: var(--spacing-lg);
+    order: 3;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    font-weight: 400;
+    padding: var(--spacing-xs);
+    border-radius: 4px;
+    transition: background-color var(--transition-fast);
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+/* Mobile Menu (placeholder for JS implementation) */
+.mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    overflow-x: hidden;
+}
+
+section {
+    padding: var(--spacing-xl) 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-medium), var(--primary-dark));
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--spacing-xxl) var(--container-padding);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: var(--text-light);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-coral);
+    color: var(--white);
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(211, 77, 80, 0.3);
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #B8434A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(211, 77, 80, 0.4);
+    color: var(--white);
+}
+
+/* About Section */
+.about {
+    background-color: var(--light-bg);
+    padding: var(--spacing-xxl) var(--container-padding);
+}
+
+.about .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.about > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.highlight {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-medium);
+    transition: transform var(--transition-smooth);
+}
+
+.highlight:hover {
+    transform: translateY(-4px);
+}
+
+.highlight h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Services Section */
+.services {
+    padding: var(--spacing-xxl) var(--container-padding);
+}
+
+.services .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.service {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all var(--transition-smooth);
+    border-top: 3px solid var(--primary-medium);
+}
+
+.service:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    background: linear-gradient(135deg, var(--primary-darker), var(--primary-muted));
+    color: var(--text-light);
+    padding: var(--spacing-xxl) var(--container-padding);
+}
+
+.why-choose-us .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.why-choose-us h2 {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.benefit {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefit h3 {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Process Section */
+.process {
+    padding: var(--spacing-xxl) var(--container-padding);
+    background-color: var(--light-bg);
+}
+
+.process .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.process h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.step {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-left: 4px solid var(--accent-coral);
+}
+
+.step h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.process-note {
+    background: var(--primary-medium);
+    color: var(--text-light);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.process-note strong {
+    color: var(--accent-coral);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: var(--spacing-xxl) var(--container-padding);
+}
+
+.portfolio .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.project {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all var(--transition-smooth);
+    border-top: 3px solid var(--primary-dark);
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+}
+
+.tag {
+    background: var(--primary-medium);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--light-bg);
+    padding: var(--spacing-xxl) var(--container-padding);
+}
+
+.contact .container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.contact > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-darker);
+    margin-bottom: var(--spacing-xs);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-medium);
+    box-shadow: 0 0 0 3px rgba(0, 96, 109, 0.1);
+}
+
+small {
+    display: block;
+    margin-top: var(--spacing-xs);
+    color: #6B7280;
+    font-size: 0.875rem;
+}
+
+.submit-button {
+    background: var(--accent-coral);
+    color: var(--white);
+    padding: var(--spacing-md) var(--spacing-xl);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-smooth);
+    width: 100%;
+}
+
+.submit-button:hover {
+    background: #B8434A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(211, 77, 80, 0.3);
+}
+
+.direct-contact {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.direct-contact h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-darker);
+    color: var(--text-light);
+    padding: var(--spacing-xl) var(--container-padding) var(--spacing-lg);
+}
+
+.footer-content {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 32px;
+    width: auto;
+}
+
+.footer-info p, .footer-contact p {
+    margin-bottom: var(--spacing-xs);
+}
+
+footer a {
+    color: var(--text-light);
+}
+
+footer a:hover {
+    color: var(--accent-coral);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    :root {
+        --container-padding: 2rem;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    .highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: auto 1fr auto;
+        text-align: left;
+        align-items: center;
+    }
+    
+    .footer-info {
+        text-align: center;
+    }
+    
+    .footer-contact {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .benefits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, .cta-button, .contact-form {
+        display: none;
+    }
+    
+    body {
+        color: black;
+        background: white;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header role="banner">
+        <nav aria-label="Navigation principale">
+            <div class="logo">
+                <img src="logo.png" alt="Logo PFE_PFA_Success" width="150" height="50">
+            </div>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" aria-label="Français">🇫🇷 FR</button>
+                <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧 EN</button>
+            </div>
+            
+            <ul>
+                <li><a href="#home" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#about" data-fr="À Propos" data-en="About">À Propos</a></li>
+                <li><a href="#services" data-fr="Services" data-en="Services">Services</a></li>
+                <li><a href="#process" data-fr="Processus" data-en="Process">Processus</a></li>
+                <li><a href="#portfolio" data-fr="Portfolio" data-en="Portfolio">Portfolio</a></li>
+                <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1 data-fr="Développement Web Professionnel à Vitesse Imbattable" data-en="Professional Web Development at Unbeatable Speed">Développement Web Professionnel à Vitesse Imbattable</h1>
+            <p data-fr="Livraison rapide, tarification transparente et solutions fiables pour tous vos besoins numériques" data-en="Fast delivery, transparent pricing, and reliable solutions for your digital needs">Livraison rapide, tarification transparente et solutions fiables pour tous vos besoins numériques</p>
+            <a href="#contact" class="cta-button" role="button" data-fr="Obtenez Votre Devis Personnalisé" data-en="Get Your Custom Quote">Obtenez Votre Devis Personnalisé</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 data-fr="Team Efficace de Développeurs" data-en="Efficient Team Powerhouse">Team Efficace de Développeurs</h2>
+            <p data-fr="Nous sommes PFE_PFA_Success - un team de développement dynamique avec des environnements de test et de développement complets prêts à relever tous les défis. Notre approche rationalisée signifie une livraison plus rapide sans compromettre la qualité." data-en="We are PFE_PFA_Success - a dynamic development team with complete testing and development environments ready to tackle any project. Our streamlined approach means faster delivery without compromising quality.">Nous sommes PFE_PFA_Success - un team de développement dynamique avec des environnements de test et de développement complets prêts à relever tous les défis. Notre approche rationalisée signifie une livraison plus rapide sans compromettre la qualité.</p>
+            <div class="highlights">
+                <div class="highlight">
+                    <h3 data-fr="Infrastructure Prête" data-en="Ready Infrastructure">Infrastructure Prête</h3>
+                    <p data-fr="Environnements de test et de développement complets à portée de main" data-en="Complete testing and development environments at our fingertips">Environnements de test et de développement complets à portée de main</p>
+                </div>
+                <div class="highlight">
+                    <h3 data-fr="Sans Limite de Pages" data-en="No Page Limits">Sans Limite de Pages</h3>
+                    <p data-fr="Tarification fixe quelle que soit la taille du projet" data-en="Fixed pricing regardless of project size">Tarification fixe quelle que soit la taille du projet</p>
+                </div>
+                <div class="highlight">
+                    <h3 data-fr="Efficacité Prouvée" data-en="Proven Efficiency">Efficacité Prouvée</h3>
+                    <p data-fr="Développeurs rapids, impact maximum" data-en="fast developers, maximum impact">Développeurs rapids, impact maximum</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2 data-fr="Nos Services" data-en="Our Services">Nos Services</h2>
+            <div class="services-grid">
+                <article class="service">
+                    <h3 data-fr="Applications Web" data-en="Web Applications">Applications Web</h3>
+                    <p data-fr="Applications web personnalisées adaptées aux besoins de votre entreprise. Des sites simples aux plateformes complexes." data-en="Custom web applications tailored to your business needs. From simple sites to complex platforms.">Applications web personnalisées adaptées aux besoins de votre entreprise. Des sites simples aux plateformes complexes.</p>
+                </article>
+                <article class="service">
+                    <h3 data-fr="Applications Desktop" data-en="Desktop Applications">Applications Desktop</h3>
+                    <p data-fr="Solutions desktop natives pour Windows, Mac et Linux." data-en="Native desktop solutions for Windows, Mac, and Linux platforms.">Solutions desktop natives pour Windows, Mac et Linux.</p>
+                </article>
+                <article class="service">
+                    <h3 data-fr="Développement Mobile" data-en="Mobile Development">Développement Mobile</h3>
+                    <p data-fr="Applications mobiles iOS et Android offrant d'excellentes expériences utilisateur." data-en="Mobile apps for iOS and Android that deliver excellent user experiences.">Applications mobiles iOS et Android offrant d'excellentes expériences utilisateur.</p>
+                </article>
+                <article class="service">
+                    <h3 data-fr="Solutions E-commerce" data-en="E-commerce Solutions">Solutions E-commerce</h3>
+                    <p data-fr="Boutiques en ligne complètes avec intégration de paiement et gestion d'inventaire." data-en="Complete online stores with payment integration and inventory management.">Boutiques en ligne complètes avec intégration de paiement et gestion d'inventaire.</p>
+                </article>
+                <article class="service">
+                    <h3 data-fr="Intégration API" data-en="API Integration">Intégration API</h3>
+                    <p data-fr="Connectez vos applications avec des services tiers et des APIs personnalisées." data-en="Connect your applications with third-party services and custom APIs.">Connectez vos applications avec des services tiers et des APIs personnalisées.</p>
+                </article>
+                <article class="service">
+                    <h3 data-fr="Services Personnalisés" data-en="Custom Services">Services Personnalisés</h3>
+                    <p data-fr="Services de développement spécialisés adaptés à vos besoins uniques." data-en="Specialized development services tailored to your unique requirements.">Services de développement spécialisés adaptés à vos besoins uniques.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-choose-us">
+            <h2 data-fr="Pourquoi Choisir PFE_PFA_Success ?" data-en="Why Choose PFE_PFA_Success?">Pourquoi Choisir PFE_PFA_Success ?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3 data-fr="Livraison Ultra-Rapide" data-en="Lightning Fast Delivery">Livraison Ultra-Rapide</h3>
+                    <p data-fr="En jours, pas en semaines. Notre flux de travail optimisé assure un achèvement rapide des projets." data-en="Days, not weeks. Our optimized workflow ensures rapid project completion.">En jours, pas en semaines. Notre flux de travail optimisé assure un achèvement rapide des projets.</p>
+                </div>
+                <div class="benefit">
+                    <h3 data-fr="Tarification Transparente" data-en="Transparent Pricing">Tarification Transparente</h3>
+                    <p data-fr="Tarifs fixes sans coûts cachés. Vous savez exactement ce que vous payez." data-en="Fixed rates with no hidden costs. You know exactly what you're paying for.">Tarifs fixes sans coûts cachés. Vous savez exactement ce que vous payez.</p>
+                </div>
+                <div class="benefit">
+                    <h3 data-fr="Expertise Full-Stack" data-en="Full-Stack Expertise">Expertise Full-Stack</h3>
+                    <p data-fr="Capacités de développement complètes avec environnements de test prêts." data-en="Complete development capabilities with ready testing environments.">Capacités de développement complètes avec environnements de test prêts.</p>
+                </div>
+                <div class="benefit">
+                    <h3 data-fr="Solutions Flexibles" data-en="Flexible Solutions">Solutions Flexibles</h3>
+                    <p data-fr="Tout type d'application, tout niveau de complexité. Nous nous adaptons à vos besoins." data-en="Any type of application, any complexity level. We adapt to your needs.">Tout type d'application, tout niveau de complexité. Nous nous adaptons à vos besoins.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process">
+            <h2 data-fr="Notre Processus de Développement Rationalisé" data-en="Our Streamlined Development Process">Notre Processus de Développement Rationalisé</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3 data-fr="1. Consultation Initiale" data-en="1. Initial Consultation">1. Consultation Initiale</h3>
+                    <p data-fr="Nous discutons de votre vision et exigences en détail. Une définition claire du projet signifie aucune perte de temps sur des objectifs flous." data-en="We discuss your vision and requirements in detail. Clear project scope definition means no time wasted on unclear objectives.">Nous discutons de votre vision et exigences en détail. Une définition claire du projet signifie aucune perte de temps sur des objectifs flous.</p>
+                </div>
+                <div class="step">
+                    <h3 data-fr="2. Phase de Développement" data-en="2. Development Phase">2. Phase de Développement</h3>
+                    <p data-fr="Développement rapide utilisant nos environnements optimisés avec des mises à jour régulières et une exécution ciblée." data-en="Rapid development using our optimized environments with regular progress updates and focused execution.">Développement rapide utilisant nos environnements optimisés avec des mises à jour régulières et une exécution ciblée.</p>
+                </div>
+                <div class="step">
+                    <h3 data-fr="3. Révision et Ajustements Légers" data-en="3. Review & Light Revisions">3. Révision et Ajustements Légers</h3>
+                    <p data-fr="Révision client du travail terminé avec ajustements mineurs inclus pour maintenir les délais et le budget." data-en="Client review of completed work with minor adjustments and refinements included to keep projects on time and budget.">Révision client du travail terminé avec ajustements mineurs inclus pour maintenir les délais et le budget.</p>
+                </div>
+                <div class="step">
+                    <h3 data-fr="4. Livraison Finale" data-en="4. Final Delivery">4. Livraison Finale</h3>
+                    <p data-fr="Produit final poli et testé livré avec la rapidité promise." data-en="Polished, tested final product delivered with the quick turnaround we promised.">Produit final poli et testé livré avec la rapidité promise.</p>
+                </div>
+            </div>
+            <div class="process-note">
+                <p><strong data-fr="Important :" data-en="Important:">Important :</strong> <span data-fr="Nous travaillons plus efficacement quand les clients ont une vision claire de leurs exigences. Cela nous aide à livrer plus rapidement et à maintenir des coûts bas pour tous." data-en="We work most efficiently when clients have a clear vision of their requirements. This helps us deliver faster and keeps costs down for everyone.">Nous travaillons plus efficacement quand les clients ont une vision claire de leurs exigences. Cela nous aide à livrer plus rapidement et à maintenir des coûts bas pour tous.</span></p>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process">
+            <h2>Our Streamlined Development Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3>1. Initial Consultation</h3>
+                    <p>We discuss your vision and requirements in detail. Clear project scope definition means no time wasted on unclear objectives.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Development Phase</h3>
+                    <p>Rapid development using our optimized environments with regular progress updates and focused execution.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Review & Light Revisions</h3>
+                    <p>Client review of completed work with minor adjustments and refinements included to keep projects on time and budget.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Final Delivery</h3>
+                    <p>Polished, tested final product delivered with the quick turnaround we promised.</p>
+                </div>
+            </div>
+            <div class="process-note">
+                <p><strong>Important:</strong> We work most efficiently when clients have a clear vision of their requirements. This helps us deliver faster and keeps costs down for everyone.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2 data-fr="Notre Travail" data-en="Our Work">Notre Travail</h2>
+            <div class="portfolio-grid">
+                <article class="project">
+                    <h3 data-fr="Plateforme E-commerce" data-en="E-commerce Platform">Plateforme E-commerce</h3>
+                    <p data-fr="Boutique en ligne complète avec intégration de paiement et gestion d'inventaire." data-en="Full-featured online store with payment integration and inventory management.">Boutique en ligne complète avec intégration de paiement et gestion d'inventaire.</p>
+                    <div class="project-tags">
+                        <span class="tag" data-fr="App Web" data-en="Web App">App Web</span>
+                        <span class="tag" data-fr="E-commerce" data-en="E-commerce">E-commerce</span>
+                        <span class="tag" data-fr="Intégration Paiement" data-en="Payment Integration">Intégration Paiement</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 data-fr="Système de Gestion d'Entreprise" data-en="Business Management System">Système de Gestion d'Entreprise</h3>
+                    <p data-fr="Application web personnalisée pour gérer les opérations commerciales et les relations clients." data-en="Custom web application for managing business operations and client relationships.">Application web personnalisée pour gérer les opérations commerciales et les relations clients.</p>
+                    <div class="project-tags">
+                        <span class="tag" data-fr="App Web" data-en="Web App">App Web</span>
+                        <span class="tag" data-fr="CRM" data-en="CRM">CRM</span>
+                        <span class="tag" data-fr="Tableau de Bord" data-en="Dashboard">Tableau de Bord</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 data-fr="Gestionnaire de Tâches Mobile" data-en="Mobile Task Manager">Gestionnaire de Tâches Mobile</h3>
+                    <p data-fr="Application mobile multiplateforme pour la collaboration d'équipe et la gestion des tâches." data-en="Cross-platform mobile application for team collaboration and task management.">Application mobile multiplateforme pour la collaboration d'équipe et la gestion des tâches.</p>
+                    <div class="project-tags">
+                        <span class="tag" data-fr="App Mobile" data-en="Mobile App">App Mobile</span>
+                        <span class="tag" data-fr="Multiplateforme" data-en="Cross-platform">Multiplateforme</span>
+                        <span class="tag" data-fr="Outils d'Équipe" data-en="Team Tools">Outils d'Équipe</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 data-fr="Suite Utilitaire Desktop" data-en="Desktop Utility Suite">Suite Utilitaire Desktop</h3>
+                    <p data-fr="Application desktop native avec multiples outils de productivité et intégrations." data-en="Native desktop application with multiple productivity tools and integrations.">Application desktop native avec multiples outils de productivité et intégrations.</p>
+                    <div class="project-tags">
+                        <span class="tag" data-fr="App Desktop" data-en="Desktop App">App Desktop</span>
+                        <span class="tag" data-fr="Productivité" data-en="Productivity">Productivité</span>
+                        <span class="tag" data-fr="Native" data-en="Native">Native</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 data-fr="Obtenez Votre Devis Personnalisé Aujourd'hui" data-en="Get Your Custom Quote Today">Obtenez Votre Devis Personnalisé Aujourd'hui</h2>
+            <p data-fr="Prêt à donner vie à votre projet ? Contactez-nous pour une tarification personnalisée et discutons de votre vision." data-en="Ready to bring your project to life? Contact us for personalized pricing and let's discuss your vision.">Prêt à donner vie à votre projet ? Contactez-nous pour une tarification personnalisée et discutons de votre vision.</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <fieldset>
+                    <legend data-fr="Détails du Projet" data-en="Project Details">Détails du Projet</legend>
+                    
+                    <div class="form-group">
+                        <label for="name" data-fr="Votre Nom *" data-en="Your Name *">Votre Nom *</label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-help">
+                        <small id="name-help" data-fr="Comment devons-nous vous appeler ?" data-en="How should we address you?">Comment devons-nous vous appeler ?</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" data-fr="Adresse Email *" data-en="Email Address *">Adresse Email *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-help">
+                        <small id="email-help" data-fr="Nous enverrons votre devis à cette adresse" data-en="We'll send your quote to this address">Nous enverrons votre devis à cette adresse</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-type" data-fr="Type de Projet *" data-en="Project Type *">Type de Projet *</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="" data-fr="Sélectionnez le type de projet" data-en="Select project type">Sélectionnez le type de projet</option>
+                            <option value="web-app" data-fr="Application Web" data-en="Web Application">Application Web</option>
+                            <option value="desktop-app" data-fr="Application Desktop" data-en="Desktop Application">Application Desktop</option>
+                            <option value="mobile-app" data-fr="Application Mobile" data-en="Mobile Application">Application Mobile</option>
+                            <option value="ecommerce" data-fr="Boutique E-commerce" data-en="E-commerce Store">Boutique E-commerce</option>
+                            <option value="custom" data-fr="Solution Personnalisée" data-en="Custom Solution">Solution Personnalisée</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-description" data-fr="Description du Projet *" data-en="Project Description *">Description du Projet *</label>
+                        <textarea id="project-description" name="project-description" rows="5" required aria-describedby="description-help" data-fr="Veuillez décrire votre projet en détail. Plus vos exigences sont claires, plus notre devis sera précis." data-en="Please describe your project in detail. The clearer your requirements, the more accurate our quote will be." placeholder="Veuillez décrire votre projet en détail. Plus vos exigences sont claires, plus notre devis sera précis."></textarea>
+                        <small id="description-help" data-fr="Incluez les fonctionnalités, la fonctionnalité et toutes exigences spéciales" data-en="Include features, functionality, and any special requirements">Incluez les fonctionnalités, la fonctionnalité et toutes exigences spéciales</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeline" data-fr="Délai Préféré" data-en="Preferred Timeline">Délai Préféré</label>
+                        <select id="timeline" name="timeline">
+                            <option value="" data-fr="Sélectionnez le délai" data-en="Select timeline">Sélectionnez le délai</option>
+                            <option value="asap" data-fr="Dès que possible" data-en="As soon as possible">Dès que possible</option>
+                            <option value="1-week" data-fr="Dans 1 semaine" data-en="Within 1 week">Dans 1 semaine</option>
+                            <option value="2-weeks" data-fr="Dans 2 semaines" data-en="Within 2 weeks">Dans 2 semaines</option>
+                            <option value="1-month" data-fr="Dans 1 mois" data-en="Within 1 month">Dans 1 mois</option>
+                            <option value="flexible" data-fr="Flexible" data-en="Flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-button" data-fr="Envoyer la Demande de Devis" data-en="Send Quote Request">Envoyer la Demande de Devis</button>
+                </fieldset>
+            </form>
+            
+            <div class="direct-contact">
+                <h3 data-fr="Préférez le Contact Direct ?" data-en="Prefer Direct Contact?">Préférez le Contact Direct ?</h3>
+                <p data-fr="Envoyez-nous un email directement : " data-en="Email us directly: ">Envoyez-nous un email directement : <a href="mailto:contact@pfepfasuccess.com">contact@pfepfasuccess.com</a></p>
+                <p data-fr="Nous répondons généralement dans les 2 heures pendant les heures d'ouverture." data-en="We typically respond within 2 hours during business hours.">Nous répondons généralement dans les 2 heures pendant les heures d'ouverture.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Logo PFE_PFA_Success" width="120" height="40">
+            </div>
+            <div class="footer-info">
+                <p data-fr="© 2024 PFE_PFA_Success. Tous droits réservés." data-en="© 2024 PFE_PFA_Success. All rights reserved.">&copy; 2024 PFE_PFA_Success. Tous droits réservés.</p>
+                <p data-fr="Développement web rapide, abordable et professionnel." data-en="Fast, affordable, professional web development.">Développement web rapide, abordable et professionnel.</p>
+            </div>
+            <div class="footer-contact">
+                <p data-fr="Email : " data-en="Email: ">Email : <a href="mailto:contact@pfepfasuccess.com">contact@pfepfasuccess.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Language Switching -->
+    <script>
+// Language switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const elementsToTranslate = document.querySelectorAll('[data-fr]');
+    
+    // Get current language from localStorage or default to French
+    let currentLang = localStorage.getItem('language') || 'fr';
+    
+    // Initialize the page with the correct language
+    switchLanguage(currentLang);
+    
+    // Add click event listeners to language buttons
+    langButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedLang = this.getAttribute('data-lang');
+            switchLanguage(selectedLang);
+            localStorage.setItem('language', selectedLang);
+        });
+    });
+    
+    function switchLanguage(lang) {
+        // Update active button
+        langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
+        
+        // Update page content
+        elementsToTranslate.forEach(element => {
+            const text = element.getAttribute(`data-${lang}`);
+            if (text) {
+                element.textContent = text;
+            }
+        });
+        
+        // Update meta tags
+        updateMetaTags(lang);
+        
+        currentLang = lang;
+    }
+    
+    function updateMetaTags(lang) {
+        const translations = {
+            fr: {
+                title: "PFE_PFA_Success - Développement Web Rapide et Abordable",
+                description: "Équipe de développement web professionnel offrant des applications web rapides et abordables, applications desktop et solutions mobiles.",
+                keywords: "développement web, applications web, applications mobiles, développement desktop, développement web abordable"
+            },
+            en: {
+                title: "PFE_PFA_Success - Fast & Affordable Web Development",
+                description: "Professional web development team delivering fast, affordable web applications, desktop apps, and mobile solutions.",
+                keywords: "web development, web applications, mobile apps, desktop development, affordable web dev"
+            }
+        };
+        
+        const translation = translations[lang];
+        
+        // Update title
+        document.title = translation.title;
+        
+        // Update meta description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', translation.description);
+        }
+        
+        // Update meta keywords
+        const metaKeywords = document.querySelector('meta[name="keywords"]');
+        if (metaKeywords) {
+            metaKeywords.setAttribute('content', translation.keywords);
+        }
+        
+        // Update Open Graph tags
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) {
+            ogTitle.setAttribute('content', translation.title);
+        }
+        
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        if (ogDescription) {
+            ogDescription.setAttribute('content', translation.description);
+        }
+        
+        // Update Twitter tags
+        const twitterTitle = document.querySelector('meta[property="twitter:title"]');
+        if (twitterTitle) {
+            twitterTitle.setAttribute('content', translation.title);
+        }
+        
+        const twitterDescription = document.querySelector('meta[property="twitter:description"]');
+        if (twitterDescription) {
+            twitterDescription.setAttribute('content', translation.description);
+        }
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Form validation enhancement
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#D34D50';
+                } else {
+                    field.style.borderColor = '#E5E7EB';
+                }
+            });
+            
+            if (isValid) {
+                // Show success message (you can replace with actual form submission)
+                const submitButton = this.querySelector('.submit-button');
+                const originalText = submitButton.textContent;
+                submitButton.textContent = currentLang === 'fr' ? 'Envoyé!' : 'Sent!';
+                submitButton.style.backgroundColor = '#10B981';
+                
+                setTimeout(() => {
+                    submitButton.textContent = originalText;
+                    submitButton.style.backgroundColor = '';
+                    this.reset();
+                }, 3000);
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>
